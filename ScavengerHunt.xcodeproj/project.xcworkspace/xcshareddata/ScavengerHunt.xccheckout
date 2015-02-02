@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0676CA7-2890-40F0-A782-2F93CD5D32E7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScavengerHunt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>45F7C22CBC7A5DEA6F5F2ACBDFE45A8403E2B449</key>
+		<string>github.com:speakerbug/ScavengerHunt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScavengerHunt.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>45F7C22CBC7A5DEA6F5F2ACBDFE45A8403E2B449</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:speakerbug/ScavengerHunt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>45F7C22CBC7A5DEA6F5F2ACBDFE45A8403E2B449</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45F7C22CBC7A5DEA6F5F2ACBDFE45A8403E2B449</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScavengerHunt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

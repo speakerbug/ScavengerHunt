@@ -13,6 +13,7 @@
 		542462901A80360F00C63F55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5424628F1A80360F00C63F55 /* Images.xcassets */; };
 		542462931A80360F00C63F55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542462911A80360F00C63F55 /* LaunchScreen.xib */; };
 		5424629F1A80360F00C63F55 /* ScavengerHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424629E1A80360F00C63F55 /* ScavengerHuntTests.swift */; };
+		54D6B2391A80442300F70D45 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6B2381A80442300F70D45 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		542462981A80360F00C63F55 /* ScavengerHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScavengerHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5424629D1A80360F00C63F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5424629E1A80360F00C63F55 /* ScavengerHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntTests.swift; sourceTree = "<group>"; };
+		54D6B2381A80442300F70D45 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				542462881A80360F00C63F55 /* AppDelegate.swift */,
 				5424628A1A80360F00C63F55 /* ViewController.swift */,
 				5424628C1A80360F00C63F55 /* Main.storyboard */,
+				54D6B2381A80442300F70D45 /* ListViewController.swift */,
 				5424628F1A80360F00C63F55 /* Images.xcassets */,
 				542462911A80360F00C63F55 /* LaunchScreen.xib */,
 				542462861A80360F00C63F55 /* Supporting Files */,
@@ -215,6 +218,7 @@
 			files = (
 				5424628B1A80360F00C63F55 /* ViewController.swift in Sources */,
 				542462891A80360F00C63F55 /* AppDelegate.swift in Sources */,
+				54D6B2391A80442300F70D45 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				542462A41A80360F00C63F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		542462A51A80360F00C63F55 /* Build configuration list for PBXNativeTarget "ScavengerHuntTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +423,7 @@
 				542462A71A80360F00C63F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
