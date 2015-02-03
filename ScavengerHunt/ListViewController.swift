@@ -13,6 +13,10 @@ class ListViewController: UITableViewController {
         ScavengerHuntItem(name: "Bird"),
         ScavengerHuntItem(name: "Brick")]
     
+    @IBAction func unwindToList(segue: UIStoryboardSegue) {
+        
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsList.count
     }

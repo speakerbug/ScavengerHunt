@@ -36,10 +36,18 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="VZe-aY-lJa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lLP-9l-YZb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lLP-9l-YZb">
+                            <connections>
+                                <segue destination="FKm-VT-yKI" kind="unwind" identifier="DoneItem" unwindAction="unwindToList:" id="VeC-5u-8sq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="TN1-cy-oRm" id="Zt9-HM-72y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="FKm-VT-yKI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1869" y="337"/>
         </scene>
