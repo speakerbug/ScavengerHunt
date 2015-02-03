@@ -14,6 +14,7 @@
 		542462931A80360F00C63F55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542462911A80360F00C63F55 /* LaunchScreen.xib */; };
 		5424629F1A80360F00C63F55 /* ScavengerHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424629E1A80360F00C63F55 /* ScavengerHuntTests.swift */; };
 		54D6B2391A80442300F70D45 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6B2381A80442300F70D45 /* ListViewController.swift */; };
+		54D6B23B1A80624B00F70D45 /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6B23A1A80624B00F70D45 /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5424629D1A80360F00C63F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5424629E1A80360F00C63F55 /* ScavengerHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntTests.swift; sourceTree = "<group>"; };
 		54D6B2381A80442300F70D45 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		54D6B23A1A80624B00F70D45 /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				542462881A80360F00C63F55 /* AppDelegate.swift */,
 				5424628A1A80360F00C63F55 /* AddViewController.swift */,
+				54D6B23A1A80624B00F70D45 /* ScavengerHuntItem.swift */,
 				54D6B2381A80442300F70D45 /* ListViewController.swift */,
 				5424628C1A80360F00C63F55 /* Main.storyboard */,
 				5424628F1A80360F00C63F55 /* Images.xcassets */,
@@ -218,6 +221,7 @@
 			files = (
 				5424628B1A80360F00C63F55 /* AddViewController.swift in Sources */,
 				542462891A80360F00C63F55 /* AppDelegate.swift in Sources */,
+				54D6B23B1A80624B00F70D45 /* ScavengerHuntItem.swift in Sources */,
 				54D6B2391A80442300F70D45 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
