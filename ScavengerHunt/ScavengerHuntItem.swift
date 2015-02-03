@@ -8,7 +8,22 @@
 
 import UIKIT
 
-class ScavengerHuntItem: NSObject {
+class ScavengerHuntItem: NSObject, NSCoding {
+    let NameKey = "nameKey"
+    let PhotoKey = "photoKey"
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(name, forKey: NameKey)
+        if let thePhoto = photo {
+            aCoder.encodeObject(thePhoto, forKey: PhotoKey)
+        }
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        name = aDecoder.decodeObjectForKey(NameKey) as String
+        photo = aDecoder.decodeObjectForKey(PhotoKey) as? UIImage
+    }
+    
     let name: String
     var photo: UIImage?
     var isComplete: Bool {
