@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fhU-Qz-y5z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZ7-lE-lG2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TN1-cy-oRm">
-                                <rect key="frame" x="26" y="50" width="548" height="30"/>
+                                <rect key="frame" x="26" y="94" width="548" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -30,9 +30,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="TN1-cy-oRm" secondAttribute="trailing" constant="10" id="gdv-9W-EfY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0Ba-ik-LMA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cFI-k4-WjV">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="VZe-aY-lJa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lLP-9l-YZb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1869" y="337"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="tF5-6D-vLA">
@@ -63,10 +72,53 @@
                             <outlet property="delegate" destination="fhU-Qz-y5z" id="vhU-e1-YsU"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="FcK-gh-MxT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2G5-bR-RaO">
+                            <connections>
+                                <segue destination="6Rx-KE-CF8" kind="presentation" id="AFJ-P9-kWj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tf-c5-vgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="341" y="337"/>
+        </scene>
+        <!--List Nav Controller-->
+        <scene sceneID="AAC-3d-Owd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QZ7-lE-lG2" userLabel="List Nav Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cI1-MU-QFe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fhU-Qz-y5z" kind="relationship" relationship="rootViewController" id="hkV-06-IQs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uly-wd-neM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-471" y="337"/>
+        </scene>
+        <!--Add Nav Controller-->
+        <scene sceneID="R7h-eC-1AN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Rx-KE-CF8" userLabel="Add Nav Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPp-ji-0l6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3gh-KY-AeY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gml-Gs-ERq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="337"/>
         </scene>
     </scenes>
 </document>
